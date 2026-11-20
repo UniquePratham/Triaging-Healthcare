@@ -30,7 +30,7 @@ const SymptomForm = () => {
         {
           method: "POST",
           headers: {
-            Authorization: "Bearer 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",
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_HF_TOKEN}`,
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
